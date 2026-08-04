@@ -1,90 +1,120 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Adrián Francisco Ramírez Navarro" />
+    <meta name="description" content="Sitio web para escuela de música" />
+    <meta
+      name="keywords"
+      content="contactos,escuela,música,comprobación,acordes"
+    />
+    <link rel="icon" href="recursos/acorde.png" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Adrián Francisco Ramírez Navarro">
-  <meta name="description" content="Sitio web para escuela de música">
-  <meta name="keywords" content="contactos,escuela,música,comprobación,acordes">
-  <link rel="icon" href="recursos/acorde.png" type="image/x-icon">
+    <title>Acordes | Contacto</title>
+  </head>
 
-  <title>Acordes | Contacto </title>
-</head>
+  <body>
+    <header id="Inicio">
+      <h1><strong>Escuela de Música Acordes</strong></h1>
 
-<body>
-
-  <header id="Inicio">
-    <h1><strong>Escuela de Música Acordes</strong></h1>
-
-    <nav id="Menu-navegacion">
-      <ul>
-        <li><a href="Index.html">Inicio</a></li>
-        <li><a href="Servicios.html">Nuestros servicios</a></li>
-        <li><a href="Nosotros.html">Nosotros</a></li>
-        <li><a href="Contacto.html">Contactos</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main id="Contenido-principal">
-    <h3 id="sobre-nosotros"></h3>
-    <h3 id="nuestra-mision"></h3>
-    <h3 id="flores-arreglos"></h3>
+      <nav id="Menu-navegacion">
+        <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="Servicios.html">Nuestros servicios</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="Contacto.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <h2>Formulario de contacto</h2>
-    <p>Si quieres recibir información más detallada, dejanos tus datos personales y te contactaremos cuanto antes.</p>
+    <p>
+      Si quieres recibir información más detallada, dejanos tus datos personales
+      y te contactaremos cuanto antes.
+    </p>
 
-    <form action="#" method="post">
-
-    <fieldset>
-    <legend>Información personal</legend>
+    <main>
+      <form action="#" method="post"></form>
+      <fieldset>
+        <legend>Información personal</legend>
         <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="80"><br>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            minlength="2"
+            maxlength="80"
+          /><br />
         </p>
         <p>
-            <label for="edad">Edad</label>
-            <input type="number" id="edad" name="edad" min="10" max="100" step="1"><br>
+          <label for="edad">Edad</label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            min="10"
+            max="100"
+            step="1"
+          /><br />
         </p>
         <p>
-            <label for="cedula">Número de identificación</label>
-            <input type="text" id="cedula" name="cedula"
-                   required pattern="[0-9]{9}"
-                   title="Ingrese números sin espacios">
+          <label for="cedula">Número de identificación</label>
+          <input
+            type="text"
+            id="cedula"
+            name="cedula"
+            required
+            pattern="[0-9]{9}"
+            title="Ingrese números sin espacios"
+          />
         </p>
-        <button type="submit">Enviar datos</button>      
-    </fieldset>
+        <button type="submit">Enviar datos</button>
+      </fieldset>
 
-    </form> 
-    <fieldset>
-    <legend>Datos de contacto </legend>
+      <fieldset>
+        <legend>Datos de contacto</legend>
         <p>
-        <label for="Teléfono">Teléfono</label>
-        <input type="tel" id="Teléfono" name="teléfono" pattern="[0-9]{8} required" title="Ingrese un número de teléfono válido de 8 dígitos"><br>
+          <label for="Teléfono">Teléfono</label>
+          <input
+            type="tel"
+            id="Teléfono"
+            name="teléfono"
+            pattern="[0-9]{8} required"
+            title="Ingrese un número de teléfono válido de 8 dígitos"
+          /><br />
         </p>
 
         <p>
-            <label for="correo">Correo electrónico</label>
-            <input type="email" name="correo" id="correo" required>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" name="correo" id="correo" required />
         </p>
-         <p>
-            <input type="checkbox" id="acepto" name="acepto" required>
-            <label for="acepto"> Estoy de acuerdo con los datos suministrados</label>
-          </p>
-          <button type="submit">Enviar datos</button> 
-    </fieldset>    
-</main>
+        <p>
+          <input type="checkbox" id="acepto" name="acepto" required />
+          <label for="acepto">
+            Estoy de acuerdo con los datos suministrados</label
+          >
+        </p>
+        <button type="submit">Enviar datos</button>
+      </fieldset>
+    </main>
 
-<footer id="Pie-de-pagina">
-    <h2 id="Contactos">Contáctanos</h2>
-    <address>
-        <a href="mailto:escuelademusicaacordes@gmail.com">escuelademusicaacordes@gmail.com<a>
-    </address>
+    <footer id="Pie-de-pagina">
+      <h2 id="Contactos">Contáctanos</h2>
+      <address>
+        <a href="mailto:escuelademusicaacordes@gmail.com"
+          >escuelademusicaacordes@gmail.com></a
+        >
+      </address>
 
-      <p><small>&copy; Escuela de Música Acordes, 2026 S.A &middot; &middot;Todos los derechos reservados.</small></p>
-</footer>
-    
-</body>
+      <p>
+        <small
+          >&copy; Escuela de Música Acordes, 2026 S.A &middot; &middot;Todos los
+          derechos reservados.</small
+        >
+      </p>
+    </footer>
+  </body>
 </html>
