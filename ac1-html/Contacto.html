@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrián Francisco Ramírez Navarro">
+  <meta name="description" content="Sitio web para escuela de música">
+  <meta name="keywords" content="contactos,escuela,música,comprobación,acordes">
+  <link rel="icon" href="recursos/acorde.png" type="image/x-icon">
+
+  <title>Acordes | Contacto </title>
+</head>
+
+<body>
+
+  <header id="Inicio">
+    <h1><strong></strong></h1>
+    <h2><em></em></h2>
+        
+    <nav id="Menu-navegacion">
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Servicios.html">Nuestros servicios</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Contacto.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="Contenido-principal">
+    <h3 id="sobre-nosotros"></h3>
+    <h3 id="nuestra-mision"></h3>
+    <h3 id="flores-arreglos"></h3>
+
+    <h2>Formulario de matrícula</h2>
+        <form action="#" method="post">
+            <!--FORM: Contenedor del formlario. Action es donde se envía el formulario
+            method: es el método de envío. Post: Envío de datos por el cuerpo de la solicitud-->
+            <fieldset>
+                <legend>Información personal</legend>
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required><br><br>
+                </p>
+               <p>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" required><br><br>
+                </p>
+                <button type="submit">Enviar matrícula</button>      
+            </fieldset>
+        </form>
+
+ <fieldset>
+            <legend>Detalles de matrícula</legend>
+            <p>
+                <label for="Teléfono">Teléfono</label>
+                <input type="tel" id="Teléfono" name="teléfono" pattern="(0-9)(8)" title="Ingrese un número de teléfono válido de 8 dígitos"><br><br>
+            </p>
+            <p>
+                <label for="fecha">Fecha de Inicio</label>
+                <input type="date" id="fecha" name="fecha"><br><br>
+            </p>
+            <p>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" min="15" max="80" step="1"><br><br>
+            </p>
+
+        </fieldset>
+
+
+  </main>
+
+  <footer id="Pie-de-pagina"> <hr><br>
+    <h2 id="Contactos">Contáctanos</h2>
+    <address>
+        <a href=""></a>
+    </address>
+
+      <p><small>&copy; Escuela de Música Acordes, 2026 S.A &middot; &middot;Todos los derechos reservados.</small></p>
+    </footer>
+    
+</body>
+</html>

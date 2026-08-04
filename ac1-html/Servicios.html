@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrián Francisco Ramírez Navarro">
+  <meta name="description" content="Sitio web para escuela de música">
+  <meta name="keywords" content="servicios,escuela,música,comprobación,acordes">
+  <link rel="icon" href="recursos/acorde.png" type="image/x-icon">
+
+  <title>Acordes | Servicios </title>
+</head>
+
+<body>
+
+  <header id="Inicio">
+    <h1><strong></strong></h1>
+    <h2><em></em></h2>
+        
+    <nav id="Menu-navegacion">
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Servicios.html">Nuestros servicios</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Contacto.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="Contenido-principal">
+    <h3 id="sobre-nosotros"></h3>
+    <h3 id="nuestra-mision"></h3>
+    <h3 id="flores-arreglos"></h3>
+
+    <!--Lista desordenada-->
+    <!--Lista rápida con emmet UL>LI*#-->
+    <h2>Materiales del curso con lista desordenada</h2>
+    <ul type="SQUARE">
+      <li>Visual Studio Code</li>
+      <li>Cuenta de Github</li>
+      <li>Cuaderno de la bitacora</li>
+      <li>Computadora con conexón a internet</li>
+    </ul>
+
+    <br /><hr />
+
+    <!--Lista Ordenada-->
+    <h2>Cómo entregar una práctica con lista ordenada</h2>
+    <!--Emmet: ol>li*8-->
+    <ol>
+      <li>Traer los cambios con un git pull</li>
+      <li>Crear la rama para la práctica con git switch -c "nombre de la rama"</li>
+      <li>Trabajar y hace commits atómicos</li>
+      <li>Subir la rama con git push</li>
+      <li>Abrir un pull request en Github</li>
+      <li>Revisar y fusionar el pull request</li>
+      <li>Volver a la rama principal (main)</li>
+      <li>Eliminar la rama de la práctica con git branch -d "nombre de la rama"</li>
+    </ol>
+    <br /><hr />
+    <!--Algunos atributos se pueden cambiar con "TYPE, START, REVERSED, CIRCLE (ul) O SQUARE (ul) ETC" -->
+
+    <!--listas descriptivas, utiliza pares de términos y descripción-->
+    <h2>Glosario de Git con listas descriptivas</h2>
+    <!--Emmet:dl>(dt+dd)*#-->
+    <dl>
+        <dt>Commit:</dt>
+        <dd>Instantánea permanente del proyecto en un momento dado</dd>
+        <dt>Rama:</dt>
+        <dd>Línea de trabajo paralela que no afecta a main o a la rama principal</dd>
+        <dt>Pull request:</dt>
+        <dd>Solicitud de revisión para incorporar una rama</dd>
+    </dl>
+    <br><hr>
+
+    <!--listas anidadas, usadas en menús y submenús-->
+    <h2>Temario de la unidad con lista anidada</h2>
+    <!--Emmet: ul>li>ul>li*2*3-->
+    <ul>
+        <li>Estructura de un documento web</li>
+            <ul>
+                <li>DOCTYPE Y HTML</li>
+                <li>HEAD y Metadatos</li>
+            </ul>
+        </li>
+        <li>Contenido</li>
+            <ul>
+                <li>Texto y enlaces</li>
+                <li>Listas y tablas</li>
+            </ul>
+        </li>
+    </ul>
+    <br><hr>
+ <!--ESQUELETO DE LA TABLA-->
+    
+    <h2>Horario semanal</h2>
+    <table border="1">
+        <caption>Horario de clases del programa</caption>
+        <thead>
+            <tr>
+            <th scope="col">Día</th>
+            <th scope="col" >Modalidad</th>
+            <th scope="col">Horarios</th>
+            <th scope="col">Contenido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>Presencial</td>
+                <td>1:30pm a 5:30pm</td>
+                <td>Listas y tablas</td>
+            </tr>
+        </tbody>
+
+        <!--Pie de la tabla-->
+        <tfoot>
+            <tr>
+                <td colspan="4">Total semanal 20 horas</td>
+            </tr>
+        </tfoot>
+</table>
+<!--table>caption+head>tr>th*4^^tbody>tr*5>td*4-->
+
+
+  </main>
+
+  <footer id="Pie-de-pagina"> <hr><br>
+    <h2 id="Contactos">Contáctanos</h2>
+    <address>
+        <a href=""></a>
+    </address>
+
+      <p><small>&copy; Escuela de Música Acordes, 2026 S.A &middot; &middot;Todos los derechos reservados.</small></p>
+    </footer>
+    
+</body>
+</html>
