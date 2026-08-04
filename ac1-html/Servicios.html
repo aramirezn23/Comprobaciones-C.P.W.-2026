@@ -15,9 +15,7 @@
 <body>
 
   <header id="Inicio">
-    <h1><strong></strong></h1>
-    <h2><em></em></h2>
-        
+    <h1><strong>Escuela de Música Acordes</strong></h1>    
     <nav id="Menu-navegacion">
       <ul>
         <li><a href="Index.html">Inicio</a></li>
@@ -30,107 +28,138 @@
   </header>
 
   <main id="Contenido-principal">
-    <h3 id="sobre-nosotros"></h3>
-    <h3 id="nuestra-mision"></h3>
-    <h3 id="flores-arreglos"></h3>
-
-    <!--Lista desordenada-->
-    <!--Lista rápida con emmet UL>LI*#-->
-    <h2>Materiales del curso con lista desordenada</h2>
+    <h2><em>Nuestras clases y servicios</em></h2>
+    <h3 id="Instrumentos individuales">¿Qué instrumentos enseñamos?</h3>
     <ul type="SQUARE">
-      <li>Visual Studio Code</li>
-      <li>Cuenta de Github</li>
-      <li>Cuaderno de la bitacora</li>
-      <li>Computadora con conexón a internet</li>
+      <li>Guitarra clásica</li>
+      <li>Piano</li>
+      <li>Bajo</li>
+      <li>Guitarra eléctrica</li>
+      <li>Harpa</li>
+      <li>Trompeta</li>
+      <li>Triángulo eléctrico</li>
+      <li>Batería</li>
+      <li>Saxofón</li>
+      <li>Armónica</li>
+      <li>Canto</li>
+      <li>Y muchos más</li>
     </ul>
-
-    <br /><hr />
-
-    <!--Lista Ordenada-->
-    <h2>Cómo entregar una práctica con lista ordenada</h2>
-    <!--Emmet: ol>li*8-->
-    <ol>
-      <li>Traer los cambios con un git pull</li>
-      <li>Crear la rama para la práctica con git switch -c "nombre de la rama"</li>
-      <li>Trabajar y hace commits atómicos</li>
-      <li>Subir la rama con git push</li>
-      <li>Abrir un pull request en Github</li>
-      <li>Revisar y fusionar el pull request</li>
-      <li>Volver a la rama principal (main)</li>
-      <li>Eliminar la rama de la práctica con git branch -d "nombre de la rama"</li>
-    </ol>
-    <br /><hr />
-    <!--Algunos atributos se pueden cambiar con "TYPE, START, REVERSED, CIRCLE (ul) O SQUARE (ul) ETC" -->
-
-    <!--listas descriptivas, utiliza pares de términos y descripción-->
-    <h2>Glosario de Git con listas descriptivas</h2>
-    <!--Emmet:dl>(dt+dd)*#-->
-    <dl>
-        <dt>Commit:</dt>
-        <dd>Instantánea permanente del proyecto en un momento dado</dd>
-        <dt>Rama:</dt>
-        <dd>Línea de trabajo paralela que no afecta a main o a la rama principal</dd>
-        <dt>Pull request:</dt>
-        <dd>Solicitud de revisión para incorporar una rama</dd>
-    </dl>
-    <br><hr>
-
-    <!--listas anidadas, usadas en menús y submenús-->
-    <h2>Temario de la unidad con lista anidada</h2>
-    <!--Emmet: ul>li>ul>li*2*3-->
-    <ul>
-        <li>Estructura de un documento web</li>
-            <ul>
-                <li>DOCTYPE Y HTML</li>
-                <li>HEAD y Metadatos</li>
-            </ul>
-        </li>
-        <li>Contenido</li>
-            <ul>
-                <li>Texto y enlaces</li>
-                <li>Listas y tablas</li>
-            </ul>
-        </li>
-    </ul>
-    <br><hr>
- <!--ESQUELETO DE LA TABLA-->
     
-    <h2>Horario semanal</h2>
-    <table border="1">
-        <caption>Horario de clases del programa</caption>
+    <h3 id="clases-grupales">¿Qué tipo de clases damos?</h3>
+     <dl>
+        <dt><strong>Individuales:</strong></dt>
+        <dd>Clases perfectas para aprender a tu ritmo y sin preocupaciones, solo tú y tu instructor profesional a cargo.</dd> <br>
+        <dt><strong>Grupales:</strong></dt>
+        <dd>En esta modalidad aprendes junto a otros estudiantes interesados en el mismo instrumento.</dd><br>
+        <dt><strong>Banda:</strong></dt>
+        <dd>En esta modalidad organizamos a diversos estudiantes con gustos afines para formar una banda, dónde experimentarán todo el proceso creativo musical.</dd><br>
+    </dl>
+
+    <h3 id="nuestros-horarios">Nuestras modalidades</h3>
+    <table border="3">
+        <caption><strong>Individual y grupal</strong></caption>
         <thead>
             <tr>
-            <th scope="col">Día</th>
-            <th scope="col" >Modalidad</th>
-            <th scope="col">Horarios</th>
-            <th scope="col">Contenido</th>
+            <th scope="col">Días</th>
+            <th scope="col">Modalidad</th>
+            <th scope="col">Horas</th>
+            <th scope="col">Precio</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Lunes</td>
+                <td>1</td>
                 <td>Presencial</td>
-                <td>1:30pm a 5:30pm</td>
-                <td>Listas y tablas</td>
+                <td>1</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Presencial</td>
+                <td>2</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Presencial</td>
+                <td>3</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Presencial</td>
+                <td>4</td>
+                <td>$45</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Presencial</td>
+                <td>5</td>
+                <td>$60</td>
             </tr>
         </tbody>
-
-        <!--Pie de la tabla-->
         <tfoot>
             <tr>
-                <td colspan="4">Total semanal 20 horas</td>
+                <td colspan="4">*Por cada hora adicional se aplica 5% de descuento</td>
             </tr>
         </tfoot>
-</table>
-<!--table>caption+head>tr>th*4^^tbody>tr*5>td*4-->
-
-
+    </table> <br>
+    <table border="3">
+        <caption><strong>Modalidad banda</strong></caption>
+        <thead>
+            <tr>
+            <th scope="col">Días</th>
+            <th scope="col">Modalidad</th>
+            <th scope="col">Horas</th>
+            <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >1</td>
+                <td>Presencial</td>
+                <td>1</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Presencial</td>
+                <td>2</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Presencial</td>
+                <td>3</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Presencial</td>
+                <td>4</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Presencial</td>
+                <td>5</td>
+                <td>$55</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">*Por cada hora adicional se aplica 10% de descuento</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p><a href="#Inicio">Volver al inicio de la página</a></p>
   </main>
 
   <footer id="Pie-de-pagina"> <hr><br>
     <h2 id="Contactos">Contáctanos</h2>
     <address>
-        <a href=""></a>
+        <a href="mailto:escuelademusicaacordes@gmail.com"
+          >escuelademusicaacordes@gmail.com</a> 
     </address>
 
       <p><small>&copy; Escuela de Música Acordes, 2026 S.A &middot; &middot;Todos los derechos reservados.</small></p>

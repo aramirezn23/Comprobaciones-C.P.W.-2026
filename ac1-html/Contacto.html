@@ -15,9 +15,8 @@
 <body>
 
   <header id="Inicio">
-    <h1><strong></strong></h1>
-    <h2><em></em></h2>
-        
+    <h1><strong>Escuela de Música Acordes</strong></h1>
+
     <nav id="Menu-navegacion">
       <ul>
         <li><a href="Index.html">Inicio</a></li>
@@ -34,52 +33,58 @@
     <h3 id="nuestra-mision"></h3>
     <h3 id="flores-arreglos"></h3>
 
-    <h2>Formulario de matrícula</h2>
-        <form action="#" method="post">
-            <!--FORM: Contenedor del formlario. Action es donde se envía el formulario
-            method: es el método de envío. Post: Envío de datos por el cuerpo de la solicitud-->
-            <fieldset>
-                <legend>Información personal</legend>
-                <p>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required><br><br>
-                </p>
-               <p>
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" name="correo" id="correo" required><br><br>
-                </p>
-                <button type="submit">Enviar matrícula</button>      
-            </fieldset>
-        </form>
+    <h2>Formulario de contacto</h2>
+    <p>Si quieres recibir información más detallada, dejanos tus datos personales y te contactaremos cuanto antes.</p>
 
- <fieldset>
-            <legend>Detalles de matrícula</legend>
-            <p>
-                <label for="Teléfono">Teléfono</label>
-                <input type="tel" id="Teléfono" name="teléfono" pattern="(0-9)(8)" title="Ingrese un número de teléfono válido de 8 dígitos"><br><br>
-            </p>
-            <p>
-                <label for="fecha">Fecha de Inicio</label>
-                <input type="date" id="fecha" name="fecha"><br><br>
-            </p>
-            <p>
-                <label for="edad">Edad</label>
-                <input type="number" id="edad" name="edad" min="15" max="80" step="1"><br><br>
-            </p>
+    <form action="#" method="post">
 
-        </fieldset>
+    <fieldset>
+    <legend>Información personal</legend>
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="80"><br>
+        </p>
+        <p>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="10" max="100" step="1"><br>
+        </p>
+        <p>
+            <label for="cedula">Número de identificación</label>
+            <input type="text" id="cedula" name="cedula"
+                   required pattern="[0-9]{9}"
+                   title="Ingrese números sin espacios">
+        </p>
+        <button type="submit">Enviar datos</button>      
+    </fieldset>
 
+    </form> 
+    <fieldset>
+    <legend>Datos de contacto </legend>
+        <p>
+        <label for="Teléfono">Teléfono</label>
+        <input type="tel" id="Teléfono" name="teléfono" pattern="[0-9]{8} required" title="Ingrese un número de teléfono válido de 8 dígitos"><br>
+        </p>
 
-  </main>
+        <p>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" id="correo" required>
+        </p>
+         <p>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto"> Estoy de acuerdo con los datos suministrados</label>
+          </p>
+          <button type="submit">Enviar datos</button> 
+    </fieldset>    
+</main>
 
-  <footer id="Pie-de-pagina"> <hr><br>
+<footer id="Pie-de-pagina">
     <h2 id="Contactos">Contáctanos</h2>
     <address>
-        <a href=""></a>
+        <a href="mailto:escuelademusicaacordes@gmail.com">escuelademusicaacordes@gmail.com<a>
     </address>
 
       <p><small>&copy; Escuela de Música Acordes, 2026 S.A &middot; &middot;Todos los derechos reservados.</small></p>
-    </footer>
+</footer>
     
 </body>
 </html>
