@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="description" content="Catálogo de títulos disponibles y formulario de pedido.">
+  <meta name="keywords" content="catálogo, libros, pedido, librería">
+
+  <title>Catálogo | El Rincón de las Letras</title>
+
+  <link rel="icon" href="recursos/favicon.png" type="image/png">
+  <link rel="stylesheet" href="estilos.css">
+
+  <!--AQUÍ SE ENLAZA LA HOJA DE ESTILOS QUE USTED DEBE CREAR.
+       El archivo debe llamarse  css/estilos.css -->
+
+</head>
+
+<body>
+
+  <!--CABECERA · idéntica a la de index.html-->
+  <header id="cabecera">
+    <div class="marca">
+      <h1>El Rincón de las Letras</h1>
+      <p class="lema">Libros que acompañan desde 1998</p>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="enlace-activo">Catálogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--CONTENIDO PRINCIPAL-->
+  <main id="contenido">
+
+    <!-- Índice interno con anclas -->
+    <nav class="indice">
+      <h2>En esta página</h2>
+      <ul>
+        <li><a href="#existencias">Títulos disponibles</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#pedido">Solicitar un pedido</a></li>
+      </ul>
+    </nav>
+
+    <!-- LA TABLA -->
+    <section id="existencias">
+      <h2>Títulos disponibles</h2>
+
+      <table class="tabla-catalogo">
+        <caption>Existencias actualizadas al 1.° de agosto de 2026</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Categoría</th>
+            <th scope="col">Título</th>
+            <th scope="col">Autoría</th>
+            <th scope="col">Precio ₡</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="3">Narrativa</td>
+            <th scope="row">La casa de los espíritus</th>
+            <td>Isabel Allende</td>
+            <td>12500</td>
+          </tr>
+          <tr>
+            <th scope="row">Los peces no cierran los ojos</th>
+            <td>Erri De Luca</td>
+            <td>9800</td>
+          </tr>
+          <tr>
+            <th scope="row">Mañana en la batalla</th>
+            <td>Javier Marías</td>
+            <td>14200</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Ensayo</td>
+            <th scope="row">Contra el fanatismo</th>
+            <td>Amos Oz</td>
+            <td>8900</td>
+          </tr>
+          <tr>
+            <th scope="row">La sociedad del cansancio</th>
+            <td>Byung-Chul Han</td>
+            <td>7600</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Poesía</td>
+            <th scope="row">Antología poética</th>
+            <td>Eunice Odio</td>
+            <td>11000</td>
+          </tr>
+          <tr>
+            <th scope="row">Cantos de vida y esperanza</th>
+            <td>Rubén Darío</td>
+            <td>6500</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              Precios sujetos a cambio. Consulte disponibilidad antes de su visita.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- LISTAS -->
+    <section id="categorias">
+      <h2>Categorías</h2>
+
+      <ul class="lista-categorias">
+        <li>Narrativa
+          <ul>
+            <li>Novela contemporánea</li>
+            <li>Cuento</li>
+            <li>Novela histórica</li>
+          </ul>
+        </li>
+        <li>Ensayo
+          <ul>
+            <li>Filosofía</li>
+            <li>Ciencias sociales</li>
+          </ul>
+        </li>
+        <li>Poesía
+          <ul>
+            <li>Autoría costarricense</li>
+            <li>Autoría latinoamericana</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Glosario del catálogo</h3>
+      <dl class="glosario">
+        <dt>Existencia</dt>
+        <dd>Ejemplares disponibles en el local para entrega inmediata.</dd>
+
+        <dt>Pedido especial</dt>
+        <dd>Título que se gestiona con la editorial y llega en semanas.</dd>
+
+        <dt>Reserva</dt>
+        <dd>Ejemplar apartado a nombre de una persona por setenta y dos horas.</dd>
+      </dl>
+    </section>
+
+    <!-- EL FORMULARIO -->
+    <section id="pedido">
+      <h2>Solicitar un pedido</h2>
+
+      <form action="#" method="post" class="formulario-pedido">
+
+        <fieldset class="grupo-campos">
+          <legend>Datos de contacto</legend>
+
+          <p class="campo">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre"
+                   required minlength="3" maxlength="60"
+                   placeholder="Ana Rodríguez Mora">
+          </p>
+
+          <p class="campo">
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" required
+                   placeholder="persona@ejemplo.com">
+          </p>
+
+          <p class="campo">
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono"
+                   required pattern="[0-9]{8}"
+                   title="Ocho dígitos, sin espacios ni guiones"
+                   placeholder="88887777">
+          </p>
+        </fieldset>
+
+        <fieldset class="grupo-campos">
+          <legend>Detalles del pedido</legend>
+
+          <p class="campo">
+            <label for="titulo">Título solicitado *</label>
+            <input type="text" id="titulo" name="titulo" required>
+          </p>
+
+          <p class="campo">
+            <label for="cantidad">Cantidad de ejemplares *</label>
+            <input type="number" id="cantidad" name="cantidad"
+                   required min="1" max="10" step="1" value="1">
+          </p>
+
+          <p class="campo">
+            <label for="fecha">Fecha en que lo necesita</label>
+            <input type="date" id="fecha" name="fecha">
+          </p>
+
+          <p class="campo">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+              <option value="">Seleccione una opción</option>
+              <option value="narrativa">Narrativa</option>
+              <option value="ensayo">Ensayo</option>
+              <option value="poesia">Poesía</option>
+              <option value="otra">Otra</option>
+            </select>
+          </p>
+
+          <fieldset class="grupo-opciones">
+            <legend>Forma de entrega *</legend>
+            <p class="opcion">
+              <input type="radio" id="local" name="entrega" value="local" required>
+              <label for="local">Retiro en el local</label>
+            </p>
+            <p class="opcion">
+              <input type="radio" id="domicilio" name="entrega" value="domicilio">
+              <label for="domicilio">Entrega a domicilio</label>
+            </p>
+          </fieldset>
+
+          <p class="campo">
+            <label for="notas">Notas adicionales</label>
+            <textarea id="notas" name="notas" rows="4" maxlength="300"></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset class="grupo-campos">
+          <legend>Confirmación</legend>
+          <p class="opcion">
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto que me contacten por los medios indicados *</label>
+          </p>
+        </fieldset>
+
+        <p class="grupo-botones">
+          <button type="submit" class="boton boton-principal">Enviar solicitud</button>
+          <button type="reset" class="boton boton-secundario">Limpiar</button>
+        </p>
+
+      </form>
+    </section>
+
+    <p class="volver"><a href="#cabecera">Volver al inicio de la página</a></p>
+
+  </main>
+
+  <!-- PIE · idéntico al de index.html -->
+  <footer id="pie">
+    <div class="pie-contenido">
+      <address class="datos-contacto">
+        Avenida Central, 200 metros norte del parque<br>
+        San José, Costa Rica<br>
+        Correo: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
+      </address>
+
+      <p class="creditos"><small>&copy; 2026 · El Rincón de las Letras</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
