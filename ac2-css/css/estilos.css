@@ -53,3 +53,147 @@ CLASES CATALOGO
 -pie-contenido
 -datos-contacto
 -creditos*/
+
+/*AQUÍ SE VAN A ESTABLECER DIVERSAS VARIABLES PARA UN USO RÁPIDO*/
+:root   {
+    --texto-cuerpo: Arial, sans-serif;
+    --texto-titulos: Helvetica, serif;
+
+    --color-fondo:#fdf0dd;
+    --color-texto: #1b1b1b;
+    --color-titulos:#f32035;
+    --color-texto-alterno: #3c1515;
+    --color-titulo-alterno: #bcbcb1;
+    --color-fondo-alterno: #b8da6f;
+    --color-caja: #92e792;
+
+    --espacio-ss: 0.8rem;
+    --esp-s: 1.6rem;
+    --esp-m: 2.4rem;
+    --esp-g: 4.0rem;
+}
+
+/*AQUÍ SE INICIA EL RESET DEL DOCUMENTO CSS*/
+*       {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html    {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/*EN ESTA SECCIÓN SE ESTABLECEN TAMAÑOS, FAMILIAS Y TODO LO RELACIONADO A TEXTO EN EL BODY*/
+
+body    {
+    font-size: 1.6rem;
+    font-family: var(--texto-cuerpo);
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color:var(--color-fondo);
+}
+
+/*EN ESTA SECCIÓN SE ESTABLECE EL TAMAÑO GENERAL DE LOS TITULOS Y ENCABEZADOS, ASÍ COMO DE ETIQUETAS*/
+
+h1, h2, h3  {
+    font-family: var(--texto-titulos);
+    line-height: 1.2;
+    color: var(--color-titulos);
+}
+
+h1  {font-size: 4.8rem;}
+h2  {font-size: 3.2rem;}
+h3  {font-size: 2.0rem;}
+
+p   {
+    margin-bottom: var(--esp-s);
+}
+
+a   {
+    color: var(--color-texto-alterno);
+    text-decoration: none;
+}
+
+/*SECCIONES*/
+
+#contenido{
+    margin-left:  auto;
+    margin-right: auto;
+    padding-top: 18rem;
+}
+
+ #cabecera  {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+} 
+
+#portada    {
+    text-align: center;
+    align-items: center;
+    padding: 12rem;
+    border-color: white;
+    background-color: #683217;
+} 
+
+.marca  {
+    background-color: var(--color-fondo-alterno);
+    text-align: center;
+}
+
+.hero   {
+    background-color: var(--color-caja);
+    padding: var(--esp-g);
+    border-radius: 0.6rem;
+    max-width: 70rem;
+}
+
+.hero-texto {
+    color: white;
+}
+
+.menu-principal {
+    display: flex;
+    font-weight: 600;
+    padding: var(--esp-m);
+    list-style: none;
+}
+
+.rejilla-servicios       {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--esp-s) var(--esp-m);
+    border-bottom: 0.1rem solid var(--color-texto-alterno);
+    top: 0;
+    z-index: 100;
+}
+
+.tarjeta    {
+    border-color: #1b1b1b;
+    border-radius: 3rem;
+    background-color: var(--color-fondo-alterno);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.tarjeta-pie    {
+    border-top: 0.1rem solid var(--color-texto);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: 700;
+}
+
+.boton  {
+    background-color: #92e792;
+}
+
+.pie-contenido  {
+    background-color: var(--color-fondo-alterno);
+
+}
