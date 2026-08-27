@@ -1,11 +1,11 @@
 :root{
-    --tinta: #1C1C1C;
+    --texto: #1C1C1C;
     --color-logo: #1C1C1C;
     --color-boton: #C46B4A;
     --blanco: #fff;
-    --color-hero-alt: #c34d22;
     --fondo-alt: #F2EEE9;
-    --color-logo: #2D4A5C;
+    --color-titulo: #4c340f;
+    --color-fondo: #93e2d8;
  
  
 /* FUENTES Y TITULOS */
@@ -28,7 +28,7 @@
     --ancho-max: 120rem;
  
 /* GRID */
-    --grid: repeat(auto-fit, minmax(28rem, 1fr));
+    --grid: repeat(auto-fit, minmax(30rem, 1fr));
  
 /* FLEX */
     --flex: 1 1 28rem;
@@ -49,13 +49,14 @@ body{
     font-size: 1.6rem;
     line-height: 1.6;
     font-family:var(--fuente-texto);
-    color:var(--tinta);
+    color:var(--texto);
+    max-width: 100%;
 }
 
 h1,h2,h3 {
   font-family:var(--fuente-titulo);
   line-height: 1.2;
-  color:var(--color-logo);
+  color:var(--color-titulo);
 }
 
 h1 {font-size: 4rem;}
@@ -63,7 +64,7 @@ h2 {font-size: 3rem;}
 h3 {font-size: 2rem;}
 
 p {
-  margin-bottom:;
+  margin-bottom:1.6rem;
 }
  
 img{
@@ -74,48 +75,190 @@ img{
  
 a{
     text-decoration: none;
+    color: #1C1C1C;
 }
  
 
 /*IDS*/
-#cabecera
-#principal
-#bienvenida
-#servicios
-#origen
-#nota
-#pie
-#disponibles
+#cabecera   {
+    max-width: var(--ancho-max);
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+    padding: 2.5rem 0;
+    border-radius: var(--radio);
+}
+
+#cabecera nav ul    {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: var(--esp-md);
+    font-size: 2rem;
+    color: var(--color-titulo);
+}
+
+#principal  {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bienvenida {
+    text-align: center;
+    padding: 8rem 0;
+    line-height: 4rem;
+    background-color: var(--fondo-alt);
+}
+
+#servicios  {
+    background-color: var(--fondo-alt);
+    border-radius: var(--radio);
+    padding: 5rem;
+    margin-bottom: 10rem ;
+    display: block;
+}
+
+#servicios h2   {
+    text-align: center;
+}
+
+#origen {
+    background-color: var(--fondo-alt);
+    border-radius: var(--radio);
+    padding: 5rem;
+    margin-bottom: 10rem ;
+}
+
+#nota   {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto
+}
+
+#pie    {
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#disponibles    {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto
+}
+
 #grupos
 #encargo
 
 
 /*CLASES*/
-.identidad{}
-.frase{}
-.navegacion{}
+.identidad  {
+    font-weight: 700;
+}
+
+.frase  {
+    font-style: italic;
+}
+
+.navegacion {
+    color: var(--color-titulo);
+    font-weight: 700;
+    padding: 1.5rem;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    list-style: none;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.navegacion a:hover  {
+    color: var(--blanco);
+    background-color: var(--color-boton);
+    padding: 1.5rem;
+    border-radius: var(--radio);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
 .pagina-actual{}
 .destacado{}
 .destacado-texto{}
 .accion{}
-.bloque-servicios{}
-.bloque{}
-.bloque-nota{}
-.testimonio{}
-.testimonio-autoria{}
-.recuadro-nota{}
-.contenido-pie{}
-.direccion{}
-.derechos{}
-.sumario{}
-.tabla-especies{}
-.lista-grupos{}
-.terminos{}
-.formulario-encargo{}
-.seccion-campos{}
-.linea-campo{}
-.seccion-opciones{}
-.opcion-radio{}
-.fila-acciones{}
-.regresar{}
 
+.bloque-servicios   {
+    display: grid;
+    grid-template-columns: var(--grid);
+    gap: 2rem;
+}
+
+
+.bloque {
+    display: grid;
+    grid-template-columns: var(--grid);
+    margin-top: 3rem;
+}
+
+.bloque-nota{}
+
+.testimonio p   {
+    font-style: italic;
+}
+.testimonio-autoria{}
+
+.recuadro-nota  {
+    padding: 3rem;
+    border-left:  0.5rem solid var(--color-boton);
+    background-color: var(--fondo-alt);
+    box-shadow: var(--sombra-3);
+    border-radius: 0 var(--radio) var(--radio) 0;
+}
+
+.contenido-pie  {
+}
+
+.direccion  {
+    border-bottom: 0.2rem solid;
+    padding-bottom: 2rem;    
+}
+
+.derechos   {
+    border-top: 0.1rem solid var(--color-texto);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.sumario    {   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sumario ul {
+    list-style: none;
+}
+
+
+.tabla-especies{}
+
+.lista-grupos{}
+
+.terminos{}
+
+.formulario-encargo{}
+
+.seccion-campos{}
+
+.linea-campo{}
+
+.seccion-opciones{}
+
+.opcion-radio{}
+
+.fila-acciones{}
+
+.regresar{}
