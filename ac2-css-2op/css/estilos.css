@@ -1,0 +1,121 @@
+:root{
+    --tinta: #1C1C1C;
+    --color-logo: #1C1C1C;
+    --color-boton: #C46B4A;
+    --blanco: #fff;
+    --color-hero-alt: #c34d22;
+    --fondo-alt: #F2EEE9;
+    --color-logo: #2D4A5C;
+ 
+ 
+/* FUENTES Y TITULOS */
+    --fuente-titulo: Georgia, "Times New Roman", serif;
+    --fuente-texto: "Trebuchet MS", Arial, sans-serif;
+ 
+/* ESPACIADO CONVERSION 1REM=10PX*/
+    --esp-xs: 0.8rem;
+    --esp-sm: 1.6rem;
+    --esp-md: 2.4rem;
+    --esp-lg: 4.0rem;
+    --esp-xl: 8.0rem;
+ 
+/* OTROS ELEMENTOS */
+    --radio: 0.6rem;
+    --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,0.6);
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,0.10);
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,0.16);
+    --transition: all 0.25s ease;
+    --ancho-max: 120rem;
+ 
+/* GRID */
+    --grid: repeat(auto-fit, minmax(28rem, 1fr));
+ 
+/* FLEX */
+    --flex: 1 1 28rem;
+}
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size: 62.5%;
+}
+ 
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family:var(--fuente-texto);
+    color:var(--tinta);
+}
+
+h1,h2,h3 {
+  font-family:var(--fuente-titulo);
+  line-height: 1.2;
+  color:var(--color-logo);
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+
+p {
+  margin-bottom:;
+}
+ 
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+a{
+    text-decoration: none;
+}
+ 
+
+/*IDS*/
+#cabecera
+#principal
+#bienvenida
+#servicios
+#origen
+#nota
+#pie
+#disponibles
+#grupos
+#encargo
+
+
+/*CLASES*/
+.identidad{}
+.frase{}
+.navegacion{}
+.pagina-actual{}
+.destacado{}
+.destacado-texto{}
+.accion{}
+.bloque-servicios{}
+.bloque{}
+.bloque-nota{}
+.testimonio{}
+.testimonio-autoria{}
+.recuadro-nota{}
+.contenido-pie{}
+.direccion{}
+.derechos{}
+.sumario{}
+.tabla-especies{}
+.lista-grupos{}
+.terminos{}
+.formulario-encargo{}
+.seccion-campos{}
+.linea-campo{}
+.seccion-opciones{}
+.opcion-radio{}
+.fila-acciones{}
+.regresar{}
+
