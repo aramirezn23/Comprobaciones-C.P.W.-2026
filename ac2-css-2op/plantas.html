@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="description" content="Catálogo de plantas disponibles y formulario de encargo.">
+  <meta name="keywords" content="plantas, catálogo, encargo, vivero">
+
+  <title>Plantas | Vivero Raíz Verde</title>
+
+  <link rel="icon" href="recursos/favicon.png" type="image/png">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       AQUÍ SE ENLAZA LA HOJA DE ESTILOS QUE USTED DEBE CREAR.
+       El archivo debe llamarse  css/estilos.css
+       ═══════════════════════════════════════════════════════════════ -->
+
+</head>
+
+<body>
+
+  <!-- ═══ CABECERA · idéntica a la de index.html ═══ -->
+  <header id="cabecera">
+    <div class="identidad">
+      <h1>Vivero Raíz Verde</h1>
+      <p class="frase">Plantas que se adaptan a su espacio</p>
+    </div>
+
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="plantas.html" class="pagina-actual">Plantas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══ CONTENIDO PRINCIPAL ═══ -->
+  <main id="principal">
+
+    <!-- Índice interno con anclas -->
+    <nav class="sumario">
+      <h2>En esta página</h2>
+      <ul>
+        <li><a href="#disponibles">Especies disponibles</a></li>
+        <li><a href="#grupos">Grupos de plantas</a></li>
+        <li><a href="#encargo">Hacer un encargo</a></li>
+      </ul>
+    </nav>
+
+    <!-- ═══ LA TABLA ═══ -->
+    <section id="disponibles">
+      <h2>Especies disponibles</h2>
+
+      <table class="tabla-especies">
+        <caption>Existencias actualizadas al 1.° de agosto de 2026</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Especie</th>
+            <th scope="col">Luz requerida</th>
+            <th scope="col">Precio ₡</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="3">Ornamentales</td>
+            <th scope="row">Monstera deliciosa</th>
+            <td>Indirecta abundante</td>
+            <td>8500</td>
+          </tr>
+          <tr>
+            <th scope="row">Calathea orbifolia</th>
+            <td>Indirecta media</td>
+            <td>12000</td>
+          </tr>
+          <tr>
+            <th scope="row">Sansevieria</th>
+            <td>Tolera poca luz</td>
+            <td>5200</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Frutales</td>
+            <th scope="row">Limón mandarina</th>
+            <td>Sol directo</td>
+            <td>15000</td>
+          </tr>
+          <tr>
+            <th scope="row">Guayaba enana</th>
+            <td>Sol directo</td>
+            <td>11500</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Medicinales</td>
+            <th scope="row">Sábila</th>
+            <td>Sol directo</td>
+            <td>3800</td>
+          </tr>
+          <tr>
+            <th scope="row">Menta</th>
+            <td>Media sombra</td>
+            <td>2500</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              Precios por unidad en maceta de vivero. Consulte disponibilidad.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- ═══ LISTAS ═══ -->
+    <section id="grupos">
+      <h2>Grupos de plantas</h2>
+
+      <ul class="lista-grupos">
+        <li>Ornamentales
+          <ul>
+            <li>De interior</li>
+            <li>De exterior</li>
+            <li>Suculentas</li>
+          </ul>
+        </li>
+        <li>Frutales
+          <ul>
+            <li>Cítricos</li>
+            <li>Tropicales</li>
+          </ul>
+        </li>
+        <li>Medicinales
+          <ul>
+            <li>Aromáticas</li>
+            <li>De uso tradicional</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Glosario de cuidados</h3>
+      <dl class="terminos">
+        <dt>Luz indirecta</dt>
+        <dd>Claridad sin que el sol toque la planta de forma directa.</dd>
+
+        <dt>Sustrato</dt>
+        <dd>Mezcla de tierra, materia orgánica y material drenante.</dd>
+
+        <dt>Esqueje</dt>
+        <dd>Fragmento de tallo que se siembra para obtener una planta nueva.</dd>
+      </dl>
+    </section>
+
+    <!-- ═══ EL FORMULARIO ═══ -->
+    <section id="encargo">
+      <h2>Hacer un encargo</h2>
+
+      <form action="#" method="post" class="formulario-encargo">
+
+        <fieldset class="seccion-campos">
+          <legend>Datos de contacto</legend>
+
+          <p class="linea-campo">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre"
+                   required minlength="3" maxlength="60"
+                   placeholder="Ana Rodríguez Mora">
+          </p>
+
+          <p class="linea-campo">
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" required
+                   placeholder="persona@ejemplo.com">
+          </p>
+
+          <p class="linea-campo">
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono"
+                   required pattern="[0-9]{8}"
+                   title="Ocho dígitos, sin espacios ni guiones"
+                   placeholder="88887777">
+          </p>
+        </fieldset>
+
+        <fieldset class="seccion-campos">
+          <legend>Detalles del encargo</legend>
+
+          <p class="linea-campo">
+            <label for="especie">Especie solicitada *</label>
+            <input type="text" id="especie" name="especie" required>
+          </p>
+
+          <p class="linea-campo">
+            <label for="cantidad">Cantidad de plantas *</label>
+            <input type="number" id="cantidad" name="cantidad"
+                   required min="1" max="20" step="1" value="1">
+          </p>
+
+          <p class="linea-campo">
+            <label for="fecha">Fecha en que la necesita</label>
+            <input type="date" id="fecha" name="fecha">
+          </p>
+
+          <p class="linea-campo">
+            <label for="grupo">Grupo</label>
+            <select id="grupo" name="grupo">
+              <option value="">Seleccione una opción</option>
+              <option value="ornamental">Ornamentales</option>
+              <option value="frutal">Frutales</option>
+              <option value="medicinal">Medicinales</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+
+          <fieldset class="seccion-opciones">
+            <legend>Forma de entrega *</legend>
+            <p class="opcion-radio">
+              <input type="radio" id="vivero" name="entrega" value="vivero" required>
+              <label for="vivero">Retiro en el vivero</label>
+            </p>
+            <p class="opcion-radio">
+              <input type="radio" id="envio" name="entrega" value="envio">
+              <label for="envio">Envío a domicilio</label>
+            </p>
+          </fieldset>
+
+          <p class="linea-campo">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="4" maxlength="300"></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset class="seccion-campos">
+          <legend>Confirmación</legend>
+          <p class="opcion-radio">
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto que me contacten por los medios indicados *</label>
+          </p>
+        </fieldset>
+
+        <p class="fila-acciones">
+          <button type="submit" class="accion accion-primaria">Enviar encargo</button>
+          <button type="reset" class="accion accion-secundaria">Limpiar</button>
+        </p>
+
+      </form>
+    </section>
+
+    <p class="regresar"><a href="#cabecera">Volver al inicio de la página</a></p>
+
+  </main>
+
+  <!-- ═══ PIE · idéntico al de index.html ═══ -->
+  <footer id="pie">
+    <div class="contenido-pie">
+      <address class="direccion">
+        Santa Ana, 800 metros oeste de la iglesia<br>
+        San José, Costa Rica<br>
+        Correo: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
+      </address>
+
+      <p class="derechos"><small>&copy; 2026 · Vivero Raíz Verde</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
