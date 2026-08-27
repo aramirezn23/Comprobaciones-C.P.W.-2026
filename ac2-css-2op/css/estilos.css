@@ -1,0 +1,372 @@
+:root{
+    --texto: #1C1C1C;
+    --color-logo: #1C1C1C;
+    --color-boton: #C46B4A;
+    --blanco: #fff;
+    --fondo-alt: #F2EEE9;
+    --color-titulo: #4c340f;
+    --color-fondo: #93e2d8;
+ 
+ 
+/* FUENTES Y TITULOS */
+    --fuente-titulo: Georgia, "Times New Roman", serif;
+    --fuente-texto: "Trebuchet MS", Arial, sans-serif;
+ 
+/* ESPACIADO CONVERSION 1REM=10PX*/
+    --esp-xs: 0.8rem;
+    --esp-sm: 1.6rem;
+    --esp-md: 2.4rem;
+    --esp-lg: 4.0rem;
+    --esp-xl: 8.0rem;
+ 
+/* OTROS ELEMENTOS */
+    --radio: 0.6rem;
+    --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,0.6);
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,0.10);
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,0.16);
+    --transition: all 0.25s ease;
+    --ancho-max: 120rem;
+ 
+/* GRID */
+    --grid: repeat(auto-fit, minmax(30rem, 1fr));
+ 
+/* FLEX */
+    --flex: 1 1 28rem;
+}
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size: 62.5%;
+}
+ 
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family:var(--fuente-texto);
+    color:var(--texto);
+
+}
+
+h1,h2,h3 {
+  font-family:var(--fuente-titulo);
+  line-height: 1.2;
+  color:var(--color-titulo);
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+
+p {
+  margin-bottom:1.6rem;
+}
+ 
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+ 
+
+/*IDS*/
+#cabecera   {
+    max-width: var(--ancho-max);
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+    padding: 2.5rem 0;
+    border-radius: var(--radio);
+}
+
+#cabecera nav ul    {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: var(--esp-md);
+    font-size: 2rem;
+    color: var(--color-titulo);
+}
+
+#principal  {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bienvenida {
+    text-align: center;
+    padding: 8rem 0;
+    line-height: 4rem;
+    background-color: var(--fondo-alt);
+}
+
+#servicios  {
+    background-color: var(--fondo-alt);
+    border-radius: var(--radio);
+    padding: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem ;
+    display: block;
+}
+
+#servicios h2   {
+    text-align: center;
+}
+
+#origen {
+    background-color: var(--fondo-alt);
+    border-radius: var(--radio);
+    padding: 5rem;
+    margin-bottom: 10rem ;
+}
+
+#nota   {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+#pie    {
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#disponibles    {
+    text-align: center;
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto
+}
+
+#grupos {
+    padding-top: 1rem;
+}
+
+#encargo    {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/*CLASES*/
+.identidad  {
+    font-weight: 700;
+}
+
+.frase  {
+    font-style: italic;
+}
+
+.navegacion {
+    color: var(--color-titulo);
+    font-weight: 700;
+    padding: 1.5rem;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    list-style: none;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.navegacion a:hover  {
+    color: var(--blanco);
+    background-color: var(--color-boton);
+    padding: 1.5rem;
+    border-radius: var(--radio);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.pagina-actual  {
+    color: var(--color-boton);
+}
+
+.bloque-servicios   {
+    display: grid;
+    grid-template-columns: var(--grid);  
+    gap: 2rem;
+}
+
+.bloque {
+    grid-template-columns: var(--grid);
+    margin-top: 3rem;
+}
+
+.bloque-nota    {
+}
+
+.testimonio p   {
+    font-style: italic;
+}
+
+.testimonio-autoria {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.recuadro-nota  {
+    padding: 3rem;
+    border-left:  0.5rem solid var(--color-boton);
+    background-color: var(--fondo-alt);
+    box-shadow: var(--sombra-3);
+    border-radius: 0 var(--radio) var(--radio) 0;
+}
+
+.direccion  {
+    border-bottom: 0.2rem solid;
+    padding-bottom: 2rem;
+    font-size: small    ;    
+}
+
+.derechos   {
+    border-top: 0.1rem solid var(--texto);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.sumario    {   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sumario ul {
+    list-style: none;
+}
+
+/*AQUI SE TRABAJA LA TABLA*/
+
+#disponibles h2 {
+    margin-bottom: 5rem;
+}
+
+table   {
+    border-collapse: collapse;
+    margin-bottom: 5rem;
+}
+
+thead tr th   {
+    color: var(--texto);
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+tbody tr:nth-last-child(even)   {
+    background-color: var(--color-fondo);
+}
+
+tbody tr th     {
+    color: var(--texto);
+    padding: 1rem;
+}
+tbody tr td     {
+    text-align: center;
+}
+
+tfoot tr td     {
+    background-color: var(--blanco);
+    padding: 1rem;
+    box-shadow: var(--sombra-3);;
+}
+
+form    {
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.tabla-especies     {
+    padding-top: 1rem;
+    width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
+}
+
+.lista-grupos   {
+    display: grid; 
+    grid-template-columns: var(--grid);
+    gap: var(--esp-lg);
+    margin-bottom: 3rem;
+}
+
+.lista-grupos li    {
+    margin-left: 5rem;
+}
+
+.terminos dt    {
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.terminos dd {
+    font-style: italic;
+    margin-left: 2rem;
+
+}
+
+.seccion-campos h2  {
+    text-align: center;
+}
+
+.seccion-campos {
+    background-color: var(--color-blanco);
+    padding: 5rem 3rem;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--radio);
+    margin: 5rem auto;
+    border: none;
+    box-shadow: var(--sombra-3);
+    font-family: var(--texto);
+}
+
+.linea-campo    {
+    color: var(--color-boton);
+    font-weight: 600;
+}
+
+.opcion-radio   {
+    color: var(--color-boton);
+    font-weight: 600;
+}
+
+.fila-acciones  {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;   
+}
+
+.regresar   {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.accion:focus {
+    outline: 0.2rem solid var(--texto);
+    outline-offset: 0.2rem;
+}
+.accion  {
+    background-color: var(--color-boton);
+    border-radius: 2rem;
+    color: var(--blanco);
+    padding: 2rem;
+}
