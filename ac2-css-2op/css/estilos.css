@@ -50,7 +50,7 @@ body{
     line-height: 1.6;
     font-family:var(--fuente-texto);
     color:var(--texto);
-    max-width: 100%;
+
 }
 
 h1,h2,h3 {
@@ -120,6 +120,7 @@ a{
     background-color: var(--fondo-alt);
     border-radius: var(--radio);
     padding: 5rem;
+    margin-top: 10rem;
     margin-bottom: 10rem ;
     display: block;
 }
@@ -138,7 +139,8 @@ a{
 #nota   {
     max-width: var(--ancho-max);
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 5rem;
 }
 
 #pie    {
@@ -150,14 +152,20 @@ a{
 }
 
 #disponibles    {
+    text-align: center;
     max-width: var(--ancho-max);
     margin-left: auto;
     margin-right: auto
 }
 
-#grupos
-#encargo
+#grupos {
+    padding-top: 1rem;
+}
 
+#encargo    {
+    text-align: center;
+    margin-top: 5rem;
+}
 
 /*CLASES*/
 .identidad  {
@@ -185,30 +193,32 @@ a{
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 
-.pagina-actual{}
-.destacado{}
-.destacado-texto{}
-.accion{}
+.pagina-actual  {
+    color: var(--color-boton);
+}
 
 .bloque-servicios   {
     display: grid;
-    grid-template-columns: var(--grid);
+    grid-template-columns: var(--grid);  
     gap: 2rem;
 }
 
-
 .bloque {
-    display: grid;
     grid-template-columns: var(--grid);
     margin-top: 3rem;
 }
 
-.bloque-nota{}
+.bloque-nota    {
+}
 
 .testimonio p   {
     font-style: italic;
 }
-.testimonio-autoria{}
+
+.testimonio-autoria {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
 
 .recuadro-nota  {
     padding: 3rem;
@@ -218,16 +228,14 @@ a{
     border-radius: 0 var(--radio) var(--radio) 0;
 }
 
-.contenido-pie  {
-}
-
 .direccion  {
     border-bottom: 0.2rem solid;
-    padding-bottom: 2rem;    
+    padding-bottom: 2rem;
+    font-size: small    ;    
 }
 
 .derechos   {
-    border-top: 0.1rem solid var(--color-texto);
+    border-top: 0.1rem solid var(--texto);
     margin-top: 3rem;
     padding-top: 1rem;
     text-align: center;
@@ -242,23 +250,123 @@ a{
     list-style: none;
 }
 
+/*AQUI SE TRABAJA LA TABLA*/
 
-.tabla-especies{}
+#disponibles h2 {
+    margin-bottom: 5rem;
+}
 
-.lista-grupos{}
+table   {
+    border-collapse: collapse;
+    margin-bottom: 5rem;
+}
 
-.terminos{}
+thead tr th   {
+    color: var(--texto);
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
 
-.formulario-encargo{}
+tbody tr:nth-last-child(even)   {
+    background-color: var(--color-fondo);
+}
 
-.seccion-campos{}
+tbody tr th     {
+    color: var(--texto);
+    padding: 1rem;
+}
+tbody tr td     {
+    text-align: center;
+}
 
-.linea-campo{}
+tfoot tr td     {
+    background-color: var(--blanco);
+    padding: 1rem;
+    box-shadow: var(--sombra-3);;
+}
 
-.seccion-opciones{}
+form    {
+    font-family: inherit;
+    font-weight: 700;
+}
 
-.opcion-radio{}
+.tabla-especies     {
+    padding-top: 1rem;
+    width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
+}
 
-.fila-acciones{}
+.lista-grupos   {
+    display: grid; 
+    grid-template-columns: var(--grid);
+    gap: var(--esp-lg);
+    margin-bottom: 3rem;
+}
 
-.regresar{}
+.lista-grupos li    {
+    margin-left: 5rem;
+}
+
+.terminos dt    {
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.terminos dd {
+    font-style: italic;
+    margin-left: 2rem;
+
+}
+
+.seccion-campos h2  {
+    text-align: center;
+}
+
+.seccion-campos {
+    background-color: var(--color-blanco);
+    padding: 5rem 3rem;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--radio);
+    margin: 5rem auto;
+    border: none;
+    box-shadow: var(--sombra-3);
+    font-family: var(--texto);
+}
+
+.linea-campo    {
+    color: var(--color-boton);
+    font-weight: 600;
+}
+
+.opcion-radio   {
+    color: var(--color-boton);
+    font-weight: 600;
+}
+
+.fila-acciones  {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;   
+}
+
+.regresar   {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.accion:focus {
+    outline: 0.2rem solid var(--texto);
+    outline-offset: 0.2rem;
+}
+.accion  {
+    background-color: var(--color-boton);
+    border-radius: 2rem;
+    color: var(--blanco);
+    padding: 2rem;
+}
