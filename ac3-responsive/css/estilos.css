@@ -76,13 +76,17 @@ img {
   height: auto;
 }
 
+main  {
+  max-width: 40rem;
+}
+
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  width: 1180px;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 90px 30px;
+  padding: 5rem 4rem;
 }
 
 .seccion-alterna {
@@ -98,22 +102,22 @@ img {
 
 .seccion-titulo {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .seccion-entrada {
-  width: 640px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   text-align: center;
   color: var(--suave);
 }
 
 .pagina-encabezado {
-  width: 1180px;
+  max-width: 40rem;
   margin: 0 auto;
-  padding: 80px 30px 48px;
+  padding: 8rem 3rem 4rem;
   text-align: center;
 }
 
@@ -127,17 +131,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 18px 30px;
+  padding: 1.8rem;
   background-color: var(--blanco);
   border-bottom: 1px solid var(--linea);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .marca {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   color: var(--verde);
 }
 
@@ -145,7 +152,7 @@ img {
 
 .marca-texto {
   font-family: var(--fuente-titulo);
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -156,17 +163,42 @@ img {
 
 .menu {
   display: flex;
-  gap: 18px;
+  gap: 1.8rem;
   list-style: none;
+  flex-direction:column;
+  position: absolute;
+  inset: 0;
+  height: 0px;
+  text-align: center;
+  width: 0px;
+  top: 100%;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .menu-enlace {
   display: inline-block;
-  padding: 10px 18px;
+  padding: 1rem 1.8rem;
   color: var(--tinta);
   font-weight: 600;
   border-radius: var(--radio);
   transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.check:checked ~ .menu{
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding-top: 2rem;
+}
+
+.check  {
+  display: none;
+}
+
+.check-label  {
+  cursor: pointer;
 }
 
 .menu-enlace:hover {
@@ -189,43 +221,47 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 560px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 3rem;
   text-align: center;
 }
 
 .portada-caja {
   background-color: rgba(0, 0, 0, 0.48);
-  padding: 48px;
+  padding: 3rem;
   border-radius: var(--radio);
-  width: 720px;
+  width: 40rem;
 }
 
 .portada-titulo {
   color: var(--blanco);
   margin-bottom: 16px;
+  font-size: 3rem;
 }
 
 .portada-bajada {
   color: var(--blanco);
-  font-size: 19px;
-  margin-bottom: 28px;
+  font-size: 1.9rem;
+  margin-bottom: 2.8rem;
 }
 
 
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
   display: flex;
-  gap: 26px;
+  gap: 2.6rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tarjeta {
-  width: 360px;
+  width: 40rem;
   background-color: var(--blanco);
-  padding: 28px;
+  padding: 2.8rem;
   border-radius: var(--radio);
   box-shadow: var(--sombra);
   text-align: center;
