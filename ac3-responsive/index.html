@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="description" content="Casa Tomillo: escuela de cocina con talleres presenciales en San José.">
+  <meta name="keywords" content="cocina, talleres, escuela, gastronomía, Costa Rica">
+
+  <title>Inicio | Casa Tomillo</title>
+
+  <link rel="icon" href="recursos/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- ═══ CABECERA · igual en las tres páginas ═══ -->
+  <header id="cabecera" class="cabecera">
+
+    <a href="index.html" class="marca">
+      <svg class="marca-icono" width="36" height="36" viewBox="0 0 36 36"
+           xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Logo de Casa Tomillo: una olla con vapor">
+        <path d="M6 16 h24 v10 a6 6 0 0 1 -6 6 h-12 a6 6 0 0 1 -6 -6 z" fill="currentColor"/>
+        <rect x="3" y="13" width="30" height="4" rx="2" fill="currentColor"/>
+        <path d="M14 10 q2 -4 0 -8" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M22 10 q2 -4 0 -8" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+      <span class="marca-texto">Casa Tomillo</span>
+    </a>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
+        <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
+        <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="contenido">
+
+    <!-- ═══ PORTADA ═══ -->
+    <section id="portada" class="portada">
+      <div class="portada-caja">
+        <h1 class="portada-titulo">Cocinar se aprende cocinando</h1>
+        <p class="portada-bajada">
+          Talleres presenciales de <strong>cocina costarricense</strong>,
+          panadería y repostería, en grupos de ocho personas.
+        </p>
+        <a href="cursos.html" class="boton boton-principal">Ver los talleres</a>
+      </div>
+    </section>
+
+    <!-- ═══ TRES PROPUESTAS · maquetadas con Flexbox ═══ -->
+    <section id="propuestas" class="seccion">
+      <h2 class="seccion-titulo">Lo que ofrecemos</h2>
+      <p class="seccion-entrada">
+        Cada taller incluye los insumos, el recetario impreso y la degustación
+        de lo preparado.
+      </p>
+
+      <div class="fila-propuestas">
+
+        <article class="tarjeta">
+          <svg class="tarjeta-icono" width="42" height="42" viewBox="0 0 42 42"
+               xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Icono de olla">
+            <path d="M8 18 h26 v11 a7 7 0 0 1 -7 7 h-12 a7 7 0 0 1 -7 -7 z" fill="currentColor"/>
+            <rect x="5" y="14" width="32" height="4" rx="2" fill="currentColor"/>
+          </svg>
+          <h3 class="tarjeta-titulo">Cocina de la casa</h3>
+          <p class="tarjeta-texto">
+            Recetas tradicionales costarricenses: olla de carne, picadillos,
+            tamal asado y arroz con leche.
+          </p>
+          <p class="tarjeta-dato">4 sesiones · ₡68 000</p>
+        </article>
+
+        <article class="tarjeta">
+          <svg class="tarjeta-icono" width="42" height="42" viewBox="0 0 42 42"
+               xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Icono de pan">
+            <ellipse cx="21" cy="24" rx="16" ry="10" fill="currentColor"/>
+            <path d="M12 20 q4 -3 8 0 M22 20 q4 -3 8 0" stroke="#FFFFFF"
+                  stroke-width="2" fill="none"/>
+          </svg>
+          <h3 class="tarjeta-titulo">Panadería</h3>
+          <p class="tarjeta-texto">
+            Masa madre, pan de campo, focaccia y bollería básica. Se trabaja
+            con fermentaciones largas.
+          </p>
+          <p class="tarjeta-dato">6 sesiones · ₡95 000</p>
+        </article>
+
+        <article class="tarjeta">
+          <svg class="tarjeta-icono" width="42" height="42" viewBox="0 0 42 42"
+               xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Icono de pastel">
+            <rect x="8" y="20" width="26" height="14" rx="3" fill="currentColor"/>
+            <path d="M8 24 q6 -5 13 0 q7 5 13 0" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+            <circle cx="21" cy="14" r="3" fill="currentColor"/>
+          </svg>
+          <h3 class="tarjeta-titulo">Repostería</h3>
+          <p class="tarjeta-texto">
+            Tartas, merengues, cremas y decoración. Incluye el manejo de
+            temperaturas y el uso de la manga.
+          </p>
+          <p class="tarjeta-dato">5 sesiones · ₡82 000</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══ GALERÍA · maquetada con Grid ═══ -->
+    <section id="galeria" class="seccion seccion-alterna">
+      <h2 class="seccion-titulo">El taller por dentro</h2>
+
+      <div class="rejilla-galeria">
+
+        <figure class="pieza">
+          <img src="recursos/taller-1.jpg" alt="Manos amasando pan sobre una mesa de madera"
+               width="1200" height="800">
+          <figcaption class="pieza-pie">Sesión de masa madre</figcaption>
+        </figure>
+
+        <figure class="pieza">
+          <img src="recursos/taller-2.jpg" alt="Bandeja de panes recién horneados"
+               width="1200" height="800">
+          <figcaption class="pieza-pie">Horneado del sábado</figcaption>
+        </figure>
+
+        <figure class="pieza">
+          <img src="recursos/taller-3.jpg" alt="Grupo de participantes cocinando en la mesa central"
+               width="1200" height="800">
+          <figcaption class="pieza-pie">Grupo de la tarde</figcaption>
+        </figure>
+
+        <figure class="pieza">
+          <img src="recursos/taller-4.jpg" alt="Detalle de una tarta decorada con frutas"
+               width="1200" height="800">
+          <figcaption class="pieza-pie">Cierre de repostería</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIO ═══ -->
+    <section id="testimonio" class="seccion">
+      <blockquote class="cita">
+        <p class="cita-texto">
+          Llegué sin saber prender un horno y me fui haciendo pan para toda
+          la familia todos los domingos.
+        </p>
+        <footer class="cita-autoria">Marcela Ureña · Taller de panadería</footer>
+      </blockquote>
+    </section>
+
+  </main>
+
+  <!-- ═══ PIE · igual en las tres páginas ═══ -->
+  <footer id="pie" class="pie">
+    <div class="pie-columnas">
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Casa Tomillo</h2>
+        <p class="pie-texto">Escuela de cocina desde 2017.</p>
+      </div>
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Dónde estamos</h2>
+        <address class="pie-datos">
+          Barrio Amón, San José<br>
+          Costa Rica<br>
+          <a href="mailto:hola@ejemplo.com" class="pie-enlace">hola@ejemplo.com</a>
+        </address>
+      </div>
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Horario</h2>
+        <p class="pie-texto">
+          Martes a sábado<br>
+          10:00 a. m. – 7:00 p. m.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="pie-creditos"><small>&copy; 2026 · Casa Tomillo</small></p>
+  </footer>
+
+</body>
+
+</html>

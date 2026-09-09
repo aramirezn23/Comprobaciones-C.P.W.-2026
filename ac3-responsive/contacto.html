@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="description" content="Inscríbase en un taller de Casa Tomillo: formulario y datos de contacto.">
+  <meta name="keywords" content="contacto, inscripción, talleres, cocina">
+
+  <title>Contacto | Casa Tomillo</title>
+
+  <link rel="icon" href="recursos/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <header id="cabecera" class="cabecera">
+
+    <a href="index.html" class="marca">
+      <svg class="marca-icono" width="36" height="36" viewBox="0 0 36 36"
+           xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Logo de Casa Tomillo: una olla con vapor">
+        <path d="M6 16 h24 v10 a6 6 0 0 1 -6 6 h-12 a6 6 0 0 1 -6 -6 z" fill="currentColor"/>
+        <rect x="3" y="13" width="30" height="4" rx="2" fill="currentColor"/>
+        <path d="M14 10 q2 -4 0 -8" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M22 10 q2 -4 0 -8" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+      <span class="marca-texto">Casa Tomillo</span>
+    </a>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+        <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
+        <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="contenido">
+
+    <section id="intro" class="pagina-encabezado">
+      <h1 class="pagina-titulo">Inscripciones</h1>
+      <p class="pagina-bajada">
+        Complete el formulario y le confirmamos el cupo dentro de las
+        siguientes 48 horas.
+      </p>
+    </section>
+
+    <!-- ═══ EL FORMULARIO ═══ -->
+    <section id="inscripcion" class="seccion">
+      <h2 class="seccion-titulo">Solicitar un cupo</h2>
+
+      <form action="#" method="post" class="formulario">
+
+        <fieldset class="grupo">
+          <legend class="grupo-titulo">Sus datos</legend>
+
+          <p class="campo">
+            <label for="nombre" class="campo-etiqueta">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" class="campo-entrada"
+                   required minlength="3" maxlength="60"
+                   placeholder="Ana Rodríguez Mora">
+          </p>
+
+          <p class="campo">
+            <label for="correo" class="campo-etiqueta">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" class="campo-entrada"
+                   required placeholder="persona@ejemplo.com">
+          </p>
+
+          <p class="campo">
+            <label for="telefono" class="campo-etiqueta">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono" class="campo-entrada"
+                   required pattern="[0-9]{8}"
+                   title="Ocho dígitos, sin espacios ni guiones"
+                   placeholder="88887777">
+            <small class="campo-ayuda">Ocho dígitos, sin espacios ni guiones.</small>
+          </p>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <legend class="grupo-titulo">Sobre el taller</legend>
+
+          <p class="campo">
+            <label for="taller" class="campo-etiqueta">Taller de interés *</label>
+            <select id="taller" name="taller" class="campo-entrada" required>
+              <option value="">Seleccione una opción</option>
+              <option value="cocina">Cocina de la casa</option>
+              <option value="panaderia">Panadería</option>
+              <option value="reposteria">Repostería</option>
+            </select>
+          </p>
+
+          <p class="campo">
+            <label for="inicio" class="campo-etiqueta">Fecha de inicio preferida</label>
+            <input type="date" id="inicio" name="inicio" class="campo-entrada">
+          </p>
+
+          <p class="campo">
+            <label for="personas" class="campo-etiqueta">Cantidad de cupos</label>
+            <input type="number" id="personas" name="personas" class="campo-entrada"
+                   min="1" max="8" step="1" value="1">
+          </p>
+
+          <fieldset class="grupo-opciones">
+            <legend class="grupo-titulo">Nivel de experiencia *</legend>
+            <p class="opcion">
+              <input type="radio" id="ninguna" name="nivel" value="ninguna"
+                     class="opcion-marca" required>
+              <label for="ninguna" class="opcion-etiqueta">Ninguna</label>
+            </p>
+            <p class="opcion">
+              <input type="radio" id="basica" name="nivel" value="basica" class="opcion-marca">
+              <label for="basica" class="opcion-etiqueta">Cocino en casa</label>
+            </p>
+            <p class="opcion">
+              <input type="radio" id="avanzada" name="nivel" value="avanzada" class="opcion-marca">
+              <label for="avanzada" class="opcion-etiqueta">Tengo formación previa</label>
+            </p>
+          </fieldset>
+
+          <p class="campo">
+            <label for="alergias" class="campo-etiqueta">Alergias o restricciones</label>
+            <textarea id="alergias" name="alergias" class="campo-entrada"
+                      rows="4" maxlength="300"></textarea>
+            <small class="campo-ayuda">Máximo 300 caracteres.</small>
+          </p>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <legend class="grupo-titulo">Confirmación</legend>
+          <p class="opcion">
+            <input type="checkbox" id="acepto" name="acepto" class="opcion-marca" required>
+            <label for="acepto" class="opcion-etiqueta">
+              Acepto que me contacten por los medios indicados *
+            </label>
+          </p>
+        </fieldset>
+
+        <p class="fila-botones">
+          <button type="submit" class="boton boton-principal">Enviar solicitud</button>
+          <button type="reset" class="boton boton-secundario">Limpiar</button>
+        </p>
+
+      </form>
+    </section>
+
+    <!-- ═══ UBICACIÓN ═══ -->
+    <section id="ubicacion" class="seccion seccion-alterna">
+      <h2 class="seccion-titulo">Cómo llegar</h2>
+
+      <div class="dos-columnas">
+
+        <div class="columna">
+          <h3 class="subtitulo">Dirección</h3>
+          <address class="direccion">
+            Calle 7, Barrio Amón<br>
+            50 metros norte de la escuela<br>
+            San José, Costa Rica
+          </address>
+
+          <h3 class="subtitulo">Horario de atención</h3>
+          <ul class="lista-horario">
+            <li>Martes a viernes: 10:00 a. m. – 7:00 p. m.</li>
+            <li>Sábados: 9:00 a. m. – 4:00 p. m.</li>
+            <li>Domingos y lunes: cerrado</li>
+          </ul>
+        </div>
+
+        <figure class="columna-figura">
+          <img src="recursos/fachada.jpg"
+               alt="Fachada de la escuela con su rótulo de madera"
+               width="1200" height="900">
+          <figcaption class="figura-pie">La entrada está sobre la calle 7</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="pie" class="pie">
+    <div class="pie-columnas">
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Casa Tomillo</h2>
+        <p class="pie-texto">Escuela de cocina desde 2017.</p>
+      </div>
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Dónde estamos</h2>
+        <address class="pie-datos">
+          Barrio Amón, San José<br>
+          Costa Rica<br>
+          <a href="mailto:hola@ejemplo.com" class="pie-enlace">hola@ejemplo.com</a>
+        </address>
+      </div>
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Horario</h2>
+        <p class="pie-texto">
+          Martes a sábado<br>
+          10:00 a. m. – 7:00 p. m.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="pie-creditos"><small>&copy; 2026 · Casa Tomillo</small></p>
+  </footer>
+
+</body>
+
+</html>
