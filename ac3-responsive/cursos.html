@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="description" content="Talleres de cocina, panadería y repostería: contenidos, horarios y tarifas.">
+  <meta name="keywords" content="talleres, cursos, cocina, panadería, repostería">
+
+  <title>Cursos | Casa Tomillo</title>
+
+  <link rel="icon" href="recursos/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <header id="cabecera" class="cabecera">
+
+    <a href="index.html" class="marca">
+      <svg class="marca-icono" width="36" height="36" viewBox="0 0 36 36"
+           xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Logo de Casa Tomillo: una olla con vapor">
+        <path d="M6 16 h24 v10 a6 6 0 0 1 -6 6 h-12 a6 6 0 0 1 -6 -6 z" fill="currentColor"/>
+        <rect x="3" y="13" width="30" height="4" rx="2" fill="currentColor"/>
+        <path d="M14 10 q2 -4 0 -8" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M22 10 q2 -4 0 -8" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+      <span class="marca-texto">Casa Tomillo</span>
+    </a>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+        <li><a href="cursos.html" class="menu-enlace activo">Cursos</a></li>
+        <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="contenido">
+
+    <section id="intro" class="pagina-encabezado">
+      <h1 class="pagina-titulo">Talleres</h1>
+      <p class="pagina-bajada">
+        Todos los talleres se imparten en grupos de ocho personas, con puesto
+        de trabajo individual.
+      </p>
+    </section>
+
+    <!-- ═══ ÍNDICE INTERNO ═══ -->
+    <nav class="indice" aria-label="Contenido de la página">
+      <h2 class="indice-titulo">En esta página</h2>
+      <ul class="indice-lista">
+        <li><a href="#calendario">Calendario y tarifas</a></li>
+        <li><a href="#contenidos">Contenido de cada taller</a></li>
+        <li><a href="#requisitos">Qué hay que traer</a></li>
+      </ul>
+    </nav>
+
+    <!-- ═══ LA TABLA ═══ -->
+    <section id="calendario" class="seccion">
+      <h2 class="seccion-titulo">Calendario y tarifas</h2>
+
+      <table class="tabla">
+        <caption class="tabla-titulo">
+          Talleres del segundo semestre de 2026. Cupo para ocho personas.
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Taller</th>
+            <th scope="col">Nivel</th>
+            <th scope="col">Día</th>
+            <th scope="col">Sesiones</th>
+            <th scope="col">Precio ₡</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">Cocina de la casa</td>
+            <th scope="row">Inicial</th>
+            <td>Martes</td>
+            <td>4</td>
+            <td>68 000</td>
+          </tr>
+          <tr>
+            <th scope="row">Intermedio</th>
+            <td>Jueves</td>
+            <td>4</td>
+            <td>72 000</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Panadería</td>
+            <th scope="row">Masa madre</th>
+            <td>Miércoles</td>
+            <td>6</td>
+            <td>95 000</td>
+          </tr>
+          <tr>
+            <th scope="row">Pan de campo</th>
+            <td>Viernes</td>
+            <td>4</td>
+            <td>70 000</td>
+          </tr>
+          <tr>
+            <th scope="row">Bollería</th>
+            <td>Sábado</td>
+            <td>5</td>
+            <td>88 000</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Repostería</td>
+            <th scope="row">Tartas</th>
+            <td>Martes</td>
+            <td>5</td>
+            <td>82 000</td>
+          </tr>
+          <tr>
+            <th scope="row">Decoración</th>
+            <td>Sábado</td>
+            <td>3</td>
+            <td>58 000</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="5">
+              Los precios incluyen insumos y recetario. Matrícula aparte: ₡10 000.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- ═══ LISTAS ═══ -->
+    <section id="contenidos" class="seccion seccion-alterna">
+      <h2 class="seccion-titulo">Contenido de cada taller</h2>
+
+      <div class="dos-columnas">
+
+        <div class="columna">
+          <h3 class="subtitulo">Temario general</h3>
+          <ul class="lista-temario">
+            <li>Cocina de la casa
+              <ul>
+                <li>Fondos y caldos</li>
+                <li>Picadillos y guarniciones</li>
+                <li>Postres tradicionales</li>
+              </ul>
+            </li>
+            <li>Panadería
+              <ul>
+                <li>Fermentación y masa madre</li>
+                <li>Formado y greñado</li>
+                <li>Horneado con vapor</li>
+              </ul>
+            </li>
+            <li>Repostería
+              <ul>
+                <li>Masas quebradas</li>
+                <li>Cremas y merengues</li>
+                <li>Montaje y decoración</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="columna">
+          <h3 class="subtitulo">Términos que usamos</h3>
+          <dl class="glosario">
+            <dt class="glosario-termino">Masa madre</dt>
+            <dd class="glosario-definicion">
+              Fermento natural de harina y agua que sustituye a la levadura comercial.
+            </dd>
+
+            <dt class="glosario-termino">Greñado</dt>
+            <dd class="glosario-definicion">
+              Corte que se hace en la masa antes de hornear para controlar su expansión.
+            </dd>
+
+            <dt class="glosario-termino">Punto de nieve</dt>
+            <dd class="glosario-definicion">
+              Estado de la clara batida en que forma picos firmes que no caen.
+            </dd>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ REQUISITOS ═══ -->
+    <section id="requisitos" class="seccion">
+      <h2 class="seccion-titulo">Qué hay que traer</h2>
+
+      <div class="dos-columnas">
+
+        <div class="columna">
+          <ol class="lista-requisitos">
+            <li>Delantal, que se puede comprar en la escuela.</li>
+            <li>Recipientes para llevarse lo preparado.</li>
+            <li>El cabello recogido y calzado cerrado.</li>
+            <li>Cuaderno, si prefiere tomar notas a mano.</li>
+          </ol>
+
+          <p class="aviso-taller">
+            <strong>Importante:</strong> avísenos con anticipación si tiene
+            alguna alergia alimentaria. Adaptamos las recetas sin costo adicional.
+          </p>
+        </div>
+
+        <figure class="columna-figura">
+          <img src="recursos/taller-5.jpg"
+               alt="Puesto de trabajo individual con utensilios ordenados"
+               width="1200" height="900">
+          <figcaption class="figura-pie">Cada persona tiene su propio puesto</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="pie" class="pie">
+    <div class="pie-columnas">
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Casa Tomillo</h2>
+        <p class="pie-texto">Escuela de cocina desde 2017.</p>
+      </div>
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Dónde estamos</h2>
+        <address class="pie-datos">
+          Barrio Amón, San José<br>
+          Costa Rica<br>
+          <a href="mailto:hola@ejemplo.com" class="pie-enlace">hola@ejemplo.com</a>
+        </address>
+      </div>
+
+      <div class="pie-bloque">
+        <h2 class="pie-titulo">Horario</h2>
+        <p class="pie-texto">
+          Martes a sábado<br>
+          10:00 a. m. – 7:00 p. m.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="pie-creditos"><small>&copy; 2026 · Casa Tomillo</small></p>
+  </footer>
+
+</body>
+
+</html>
