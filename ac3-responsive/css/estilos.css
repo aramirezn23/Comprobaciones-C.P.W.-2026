@@ -9,6 +9,12 @@
 
 
 /* ─── RESET ──────────────────────────────────────────────────────────── */
+
+html  {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,16 +38,16 @@
   --fuente-titulo: Georgia, 'Times New Roman', serif;
   --fuente-texto:  'Segoe UI', Arial, sans-serif;
 
-  --radio:  6px;
-  --sombra: 0 3px 10px rgba(0, 0, 0, 0.08);
-  --sombra-alta: 0 8px 20px rgba(0, 0, 0, 0.14);
+  --radio:  0.6rem;
+  --sombra: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
+  --sombra-alta: 0 0.8rem 2rem rgba(0, 0, 0, 0.14);
 }
 
 
-/* ─── BASE ───────────────────────────────────────────────────────────── */
+/* ─── BASE PARA MOBILE FIRST───────────────────────────────────────────────────────────── */
 body {
   font-family: var(--fuente-texto);
-  font-size: 17px;
+  font-size: 1.7rem;
   line-height: 1.65;
   color: var(--tinta);
   background-color: var(--crema);
@@ -49,15 +55,15 @@ body {
 
 h1, h2, h3 {
   font-family: var(--fuente-titulo);
-  line-height: 1.25;
+  line-height: 1.2;
   color: var(--verde);
 }
 
-h1 { font-size: 52px; }
-h2 { font-size: 34px; }
-h3 { font-size: 22px; }
+h1 { font-size: 4rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
 
-p { margin-bottom: 18px; }
+p { margin-bottom: 1.8rem; }
 
 a {
   color: var(--terracota);
@@ -66,6 +72,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
