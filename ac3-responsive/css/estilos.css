@@ -41,6 +41,7 @@ html  {
   --radio:  0.6rem;
   --sombra: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
   --sombra-alta: 0 0.8rem 2rem rgba(0, 0, 0, 0.14);
+  --grid: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 
@@ -275,16 +276,16 @@ main  {
   box-shadow: var(--sombra-alta);
 }
 
-.tarjeta-icono  { color: var(--terracota); margin: 0 auto 14px; }
-.tarjeta-titulo { margin-bottom: 8px; }
+.tarjeta-icono  { color: var(--terracota); margin: 0 auto 1.4rem; }
+.tarjeta-titulo { margin-bottom: 0.8rem; }
 .tarjeta-texto  { color: var(--suave); flex-grow: 1; }
 
 .tarjeta-dato {
   font-weight: 700;
   color: var(--verde);
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-bottom: 0;
-  padding-top: 14px;
+  padding-top: 1.4rem;
   border-top: 1px solid var(--linea);
 }
 
@@ -292,8 +293,8 @@ main  {
 /* ─── GALERÍA · Grid ─────────────────────────────────────────────────── */
 .rejilla-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 18px;
+  grid-template-columns:var(--grid);
+  gap: 1.8rem;
 }
 
 .pieza {
@@ -320,17 +321,17 @@ main  {
   right: 0;
   background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
   color: var(--blanco);
-  padding: 22px 12px 10px;
-  font-size: 14px;
+  padding: 2.2rem 1.2rem 1rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 
 /* ─── CITA ───────────────────────────────────────────────────────────── */
 .cita {
-  width: 720px;
+  width: 30rem;
   margin: 0 auto;
-  padding: 44px;
+  padding: 4rem;
   background-color: var(--blanco);
   border-left: 5px solid var(--terracota);
   border-radius: var(--radio);
@@ -339,30 +340,31 @@ main  {
 
 .cita-texto {
   font-family: var(--fuente-titulo);
-  font-size: 23px;
+  font-size: 2rem;
   font-style: italic;
   line-height: 1.5;
 }
 
 .cita-autoria {
   color: var(--suave);
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: right;
 }
 
 
 /* ─── ÍNDICE INTERNO ─────────────────────────────────────────────────── */
 .indice {
-  width: 1180px;
-  margin: 0 auto 20px;
+  max-width: 40rem;
+  margin: 0 auto;
   padding: 0 30px;
+  text-align: center;
 }
 
-.indice-titulo { font-size: 19px; margin-bottom: 8px; }
+.indice-titulo { font-size: 1.9rem; margin-bottom: 0.8rem; }
 
 .indice-lista {
   display: flex;
-  gap: 26px;
+  gap: 2.6rem;
   list-style: none;
 }
 
@@ -374,7 +376,7 @@ main  {
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
 .tabla {
-  width: 100%;
+  width: 40rem;
   border-collapse: collapse;
   background-color: var(--blanco);
   border-radius: var(--radio);
@@ -387,7 +389,7 @@ main  {
   font-weight: 600;
   text-align: left;
   color: var(--suave);
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .tabla th,
