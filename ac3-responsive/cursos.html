@@ -223,9 +223,13 @@
         </div>
 
         <figure class="columna-figura">
-          <img src="recursos/taller-5.jpg"
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/puesto-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/puesto-430.jpg">
+            <img src="recursos/puesto.jpg"
                alt="Puesto de trabajo individual con utensilios ordenados"
                width="1200" height="900" loading="lazy">
+          </picture>
           <figcaption class="figura-pie">Cada persona tiene su propio puesto</figcaption>
         </figure>
 

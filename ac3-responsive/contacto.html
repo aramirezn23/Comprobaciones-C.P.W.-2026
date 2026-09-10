@@ -179,9 +179,13 @@
         </div>
 
         <figure class="columna-figura">
-          <img src="recursos/fachada.jpg"
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/fachada-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/fachada-430.jpg">
+            <img src="recursos/fachada.jpg"
                alt="Fachada de la escuela con su rótulo de madera"
                width="1200" height="900" loading="lazy">
+          </picture>
           <figcaption class="figura-pie">La entrada está sobre la calle 7</figcaption>
         </figure>
 

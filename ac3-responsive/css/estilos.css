@@ -231,7 +231,7 @@ main {
 /* ─── PORTADA ────────────────────────────────────────────────────────── */
 .portada {
   background-color: var(--verde);
-  background-image: url("../recursos/portada.jpg");
+  background-image: url("/ac3-responsive/recursos/portada.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
