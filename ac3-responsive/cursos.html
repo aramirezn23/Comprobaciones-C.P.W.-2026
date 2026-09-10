@@ -31,6 +31,13 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
+      <input type="checkbox" name="mm" id="mm" class="check">
+      <label for="mm" class="check-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </label>
+      
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace activo">Cursos</a></li>
@@ -210,15 +217,19 @@
           </ol>
 
           <p class="aviso-taller">
-            <strong>Importante:</strong> avísenos con anticipación si tiene
+            <strong>Importante:</strong> Avísenos con anticipación si tiene
             alguna alergia alimentaria. Adaptamos las recetas sin costo adicional.
           </p>
         </div>
 
         <figure class="columna-figura">
-          <img src="recursos/taller-5.jpg"
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/puesto-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/puesto-430.jpg">
+            <img src="recursos/puesto.jpg"
                alt="Puesto de trabajo individual con utensilios ordenados"
-               width="1200" height="900">
+               width="1200" height="900" loading="lazy">
+          </picture>
           <figcaption class="figura-pie">Cada persona tiene su propio puesto</figcaption>
         </figure>
 

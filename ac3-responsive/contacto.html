@@ -31,6 +31,13 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
+      <input type="checkbox" name="mm" id="mm" class="check">
+      <label for="mm" class="check-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </label>
+      
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
@@ -172,9 +179,13 @@
         </div>
 
         <figure class="columna-figura">
-          <img src="recursos/fachada.jpg"
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/fachada-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/fachada-430.jpg">
+            <img src="recursos/fachada.jpg"
                alt="Fachada de la escuela con su rótulo de madera"
-               width="1200" height="900">
+               width="1200" height="900" loading="lazy">
+          </picture>
           <figcaption class="figura-pie">La entrada está sobre la calle 7</figcaption>
         </figure>
 

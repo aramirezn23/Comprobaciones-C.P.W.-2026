@@ -32,6 +32,13 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
+      <input type="checkbox" name="mm" id="mm" class="check">
+      <label for="mm" class="check-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </label>
+
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
@@ -119,26 +126,42 @@
       <div class="rejilla-galeria">
 
         <figure class="pieza">
-          <img src="recursos/taller-1.jpg" alt="Manos amasando pan sobre una mesa de madera"
-               width="1200" height="800">
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/Amasando-740.jpg  ">
+            <source media="(min-width: 430px)" srcset="recursos/Amasando-430.jpg">
+            <img src="recursos/Amasando.jpg" alt="Manos amasando pan sobre una mesa de madera"
+               width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-pie">Sesión de masa madre</figcaption>
         </figure>
 
         <figure class="pieza">
-          <img src="recursos/taller-2.jpg" alt="Bandeja de panes recién horneados"
-               width="1200" height="800">
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/horneado-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/horneado-430.jpg">
+            <img src="recursos/horneado.jpg" alt="Bandeja de panes recién horneados"
+               width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-pie">Horneado del sábado</figcaption>
         </figure>
 
         <figure class="pieza">
-          <img src="recursos/taller-3.jpg" alt="Grupo de participantes cocinando en la mesa central"
-               width="1200" height="800">
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/participantes-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/participantes-430.jpg">
+            <img src="recursos/participantes.jpg" alt="Grupo de participantes cocinando en la mesa central"
+               width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-pie">Grupo de la tarde</figcaption>
         </figure>
 
         <figure class="pieza">
-          <img src="recursos/taller-4.jpg" alt="Detalle de una tarta decorada con frutas"
-               width="1200" height="800">
+          <picture>
+            <source media="(min-width: 740px)" srcset="recursos/tarta-740.jpg">
+            <source media="(min-width: 430px)" srcset="recursos/tarta-430.jpg">
+            <img src="recursos/tarta.jpg" alt="Detalle de una tarta decorada con frutas"
+               width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-pie">Cierre de repostería</figcaption>
         </figure>
 
